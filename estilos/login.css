@@ -36,7 +36,7 @@ main {
 
 #cadastro #imagem {
     height: 200px;
-    background-image: url('../imagens/imagem-fundo.jpg');
+    background-image: url('../imagens/login.jpg');
     background-size: cover;
 }
 
