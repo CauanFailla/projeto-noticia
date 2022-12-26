@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #0000ff;
+    --cor2: #14047B;
+    --cor3: #12D5E1;
+    --cor4: #1292C1;
+    --cor5: #8BC3E0;
+}
+
+main {
+    width: 90vw;
+    height: 80vh;
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#cadastro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 480px;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.404);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#cadastro #imagem {
+    height: 200px;
+    background-image: url('../imagens/imagem-fundo.jpg');
+    background-size: cover;
+}
+
+#cadastro #formulario {
+    padding: 10px;
+}
+
+#formulario h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#formulario .prin {
+    background-color: var(--cor2);
+    margin-top: 10px;
+    border-radius: 13px;
+    height: 40px;
+    padding-left: 2px;
+}
+
+
+
+.prin input {
+    background-color: var(--cor5);
+    border-radius: 13px;
+    border: none;
+    height: 80%;
+    width: calc(100% - 33px);
+    transform: translateY(3px);
+    padding-left: 5px;
+}
+
+.prin span {
+    color: white;
+    vertical-align: middle;
+}
+
+#formulario label {
+    display: none;
+}
+
+#formulario input[type=submit] {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--cor1);
+    border-radius: 14px;
+    height: 38px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#formulario input[type=submit]:hover {
+    cursor: pointer;
+    background-color: var(--cor2);
+}
+
+/*Media queries*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        height: 80vh;
+    }
+
+    #cadastro {
+        width: 80vw;
+        height: 300px;
+    }
+
+    #cadastro #imagem {
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-position: center top;
+    }
+
+    #cadastro #formulario {
+        float: right;
+        width: 60%;
+    }
+
+    #formulario span {
+        font-size: 1.6em;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        height: 80vh;
+    }
+
+    #cadastro {
+        width: 900px;
+        height: 300px;
+    }
+
+    #cadastro #imagem {
+        float: right;
+        height: 100%;
+        width: 50%;
+    }
+
+    #cadastro #formulario {
+        float: left;
+        width: 50%;
+    }
+
+    #formulario span {
+        font-size: 1.6em;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+    }
+}
